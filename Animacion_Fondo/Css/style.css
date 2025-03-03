@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(45, 44, 44);
+}
+.animacion{
+    width: 450px;
+    height: 400px;
+    border-radius: 20px;
+    box-shadow: 20px 20px 10px rgb(125, 163, 68);
+    background-size: cover;
+    background-position: center;
+    animation: slider 10s linear infinite;
+  
+}
+@keyframes slider {
+    0% {background-image: url('../Imagenes/img1.jpg');}
+    30% {background-image: url("../Imagenes/img2.jpg");}
+    60% {background-image: url("../Imagenes/img3.jpg");}
+    100% {background-image: url("../Imagenes/img4.jpg");}
+}
