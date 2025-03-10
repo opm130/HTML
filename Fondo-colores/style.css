@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&display=swap');
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: black;
+}
+.container{
+    text-align: center;
+}
+.text{
+    font-family: "Big Shoulders Stencil", sans-serif;
+    font-size: 5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #ff8a00, #e52e71, #00c6ff);
+    background-size: 200%;
+    background-clip: text;
+    color: transparent;
+    animation: cachetes 2s infinite alternate;
+}
+@keyframes cachetes{
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 100%;
+    }
+}
